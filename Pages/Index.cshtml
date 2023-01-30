@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2>Како си ,што правиш?!</h2>
+    @{
+        string message = "foreignObject example with Scalable Vector Graphics (SVG)";
+    }
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" rx="10" ry="10" width="200" height="200" stroke="black" 
+        fill="none" />
+    <foreignObject x="20" y="20" width="160" height="160">
+        <p>@message</p>
+    </foreignObject>
+</svg>
+    <a href="mailto:Support@contoso.com">Support@contoso.com</a>
+<h2>The time on the server is @DateTime.Now</h2>
+</div>
